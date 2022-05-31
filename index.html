@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+        <meta charset="UTF-8">
+        <title>AcaBank</title>
+        <link rel="stylesheet" type="text/css" href="style/styles.css">
+        <!--Traemos un icono que vamos a ocupar para el buscador (icomooon)-->
+        <link rel="stylesheet" href="https://i.icomoon.io/public/temp/226ad4855d/UntitledProject/style.css">
+        <!--Mandamos a llamar al js que nos ayudara hacer el slider-->
+        <link rel="stylesheet" href="style/flexslider.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script src="js/jquery.flexslider.js"></script>
+        <script src="js/System.js"></script>
+        <!--Codigo Js-->
+        <script type="text/javascript" charset="utf-8">
+            $(window).load(function() {
+            $('.flexslider').flexslider();
+            });
+        </script>
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="imagenes/logo_1.png" alt="Logo provicional" width="225px" height="119px"></a>
+        <h1 id="titulo">Banco Universitario</h1>
+    </header>
+
+    <nav>
+        <div>
+            <button type="submit" class="nav-boton">
+              <span class="icon-search"></span> <!--mandamos a llamar al icono-->
+            </button>
+            <input type="text" name="buscador" class="nav-buscador" placeholder="Buscar..."> <!--buscador, placeholder(el texto como desvanecido)-->
+        </div>
+        <ul class="nav-ul">
+            <li class="nav-li">
+                <a class="nav-a" href="">Cuentas</a>
+                <ul>
+                    <li><a class="a-submenu" href="Login.html">Estudiante</a></li>
+                    <!-- <li><a class="a-submenu" href="">Docente</a></li> -->
+                    <!-- <li><a class="a-submenu" href="">Trabajador</a></li> -->
+                </ul>
+            </li>
+            <li class="nav-li">
+                <a class="nav-a" href="">Servicio al Cliente</a>
+                <ul>
+                    <!-- <li><a class="a-submenu" href="">Ubicación</a></li>
+                    <li><a class="a-submenu" href="">Servicios</a></li> -->
+                    <li><a class="a-submenu" href="acercade.html">Ayuda</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <aside>
+        <h2 class="tbarra"> Servicio al Cliente </h2>
+        <!--Articulo 1-->
+        <article> <!--sirve para agrupar contenidos similares-->
+			<header>
+				<h3> Titulo de la noticia 1 </h3>
+			</header>
+
+			<figure class="nav-figure"> <!--figure sirve para insetar elementos, como imagenes-->
+				<img class="nav-imagen" src="imagenes/alumnos.jpeg"/> <!--insetamos la imagen(jpg,gif,png)-->
+				<figcaption><!--sirve para poner un descripsión a la imagen--> 
+					Bienvenida Alumnos
+				</figcaption>
+			</figure>
+
+			<p class="notice"> <strong>Noticia 1</strong></p> <!--strong es para negritas-->
+			<p> hablamos de la noticia 1 </p>
+		</article>
+
+        <!--Articulo 2-->
+        <article> 
+			<header>
+				<h3> Titulo de la noticia 2 </h3>
+			</header>
+
+			<figure class="nav-figure">
+				<img class="nav-imagen" src="imagenes/infor.jpeg"/> 
+				<figcaption>
+					Información General
+				</figcaption>
+			</figure>
+            
+			<p class="notice"> <strong>Noticia 2</strong></p> 
+			<p> Hablamos de la notica 2</p>
+		</article>
+
+    <!--Articulo 3-->
+        <article> 
+			<header>
+				<h3> Titulo de la noticia 3 </h3>
+			</header>
+
+			<figure class="nav-figure">
+				<img class="nav-imagen" src="imagenes/infor.jpeg"/> 
+				<figcaption>
+					Información General
+				</figcaption>
+			</figure>
+            
+			<p class="notice"> <strong>Noticia 3</strong></p> 
+			<p> Hablamos de la notica 3</p>
+		</article>
+
+    </aside>
+    
+    <section> <!--sección principal de la pagina-->
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="imagenes/1.jpg" alt="">
+                    <section class="flex-caption"><p>Imagen1</p></section>
+                </li>
+                <li>
+                    <img src="imagenes/2.jpg" alt="">
+                    <section class="flex-caption"><p>Imagen2</p></section>
+                </li>
+                <li>
+                    <img src="imagenes/3.jpg" alt="">
+                    <section class="flex-caption"><p>Imagen3</p></section>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <main>
+        <div class="cajas">
+			<figure class="main-figure">
+				<img class="main-imagen" src="imagenes/1.jpg"/> 
+			</figure>
+			<h2> <strong>Titulo 1</strong></h2> 
+			<p> Contenido</p>
+        </div>
+
+        <div class="cajas">
+			<figure class="main-figure">
+				<img class="main-imagen" src="imagenes/2.jpg"/> 
+			</figure>
+			<h2> <strong>Titulo 2</strong></h2> 
+			<p> Contenido</p>
+        </div>
+
+        <div class="cajas">
+			<figure class="main-figure">
+				<img class="main-imagen" src="imagenes/3.jpg"/> 
+			</figure>
+			<h2> <strong>Titulo 3</strong></h2> 
+			<p> Contenido</p>
+        </div>
+    </main>
+
+    <footer>
+        <img class="logo-foot" src="imagenes/logo_1.png" alt="icono" width="220px" height="119px">
+        <ul class="lista-social">
+            <li> <a  href="https://www.facebook.com/"><img src="imagenes/Social/32x32/fbblanco32.png" alt=""></a></li>
+            <li> <a  href="https://www.instagram.com/"><img src="imagenes/Social/32x32/instagramblanco32.png" alt=""></a></li>
+            <li> <a  href="https://www.twitter.com/"><img src="imagenes/Social/32x32/twitterblanco32.png" alt=""></a></li>
+            <li> <a  href="https://www.youtube.com/"><img src="imagenes/Social/32x32/youtubeblanco32.png" alt=""></a></li>
+    
+        </ul>
+        <ul class="list-foot">
+            <li>
+            <h1><a href="">Avisos de Privacidad</a></h1>
+            </li>
+            <li><h1><a href=""><br>Contacto</a></h1></li>
+            <p class="direccion"><br><br>© 2020 AcaBanco, Banco Estudiantil de la Facultad de Estudios Superiores Acatlán, Avenida Alcanfores y San Juan, Totoltepec s/n, Sta Cruz Acatlan, 53150 Naucalpan de Juárez, Méx.</p>
+        </ul>
+    </footer>
+
+
+</body>

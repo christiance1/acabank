@@ -1,0 +1,153 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="es">
+
+<head>
+        <meta charset="UTF-8">
+        <title>Registro de Usuario - AcaBank</title>
+        <link rel="stylesheet" type="text/css" href="style/styles-registro.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script src="js/System.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="imagenes/logo_1.png" alt="Logo provicional" width="225px" height="119px"></a>
+        <h1 id="titulo">Banco Universitario</h1>
+    </header>
+
+
+    <main>
+        <div class="reg">
+            <h1>Registro de Usuario</h1>
+            <form>
+                    <!--Datos Pers-->
+                <label class="sub" for="date">Datos Personales</label>
+                <div class="dp">
+                        
+                    <div class="divint">
+                        <!--Nombre-->
+                        <div class="element">
+                            <label for="name">Nombre</label>
+                            <input id="name" type="text" placeholder="Ingresa Nombre">
+                        </div>
+                        <!--Apellido Pat-->
+                        <div class="element">
+                            <label for="LastName1">Apellido Paterno</label> 
+                            <input id="apep" type="text" placeholder="Ingresa Apellido Paterno">
+                        </div>
+                        <!--Apellido Mat-->
+                        <div class="element">
+                            <label for="LastName2">Apellido Materno</label>
+                            <input id="apem" type="text" placeholder="Ingresa Apellido Materno">
+                        </div>                       
+                        <!--Fecha de nacimiento-->
+                        <div class="element">
+                            <label for="date">Fecha de Nacimiento</label>
+                            <input id="date" type="date" name="fecha">
+                        </div>                         
+                        <!--CURP-->
+                        <div class="element">
+                            <label for="curp">Curp</label>
+                            <input id="curp" type="text" placeholder="Ingresa CURP">
+                        </div>
+                        <!--Fecha de nacimiento-->
+                        <div class="element">
+                            <label for="name">Numero telefonico</label>
+                            <input id="nute" type="text" placeholder="Ingresa tu numero telefonico">
+                        </div>  
+                    </div>
+                    <br>
+                    <label class="sub" for="direction">Direccion</label>
+
+                    <div class="divint">
+                    
+                        <div class="element">
+                            <label for="state">Estado</label>
+                            <select id="Estd" onchange="select_municipio(this.value);">                             
+                            </select>
+                        </div>
+                 
+                        <div class="element">
+                            <label for="Mun">Municipio</label>                            
+                            <select id="Mncp" onchange="select_colonia(this.value);">                
+                            <option value="0">---------------</option>             
+                            </select>
+                        </div>
+
+                        <div class="element">
+                            <label for="col">Colonia</label>                            
+                            <select id="Coln">              
+                            <option value="0">---------------</option>               
+                            </select>
+                        </div>
+
+                        <div class="element">
+                            <label for="street">Calle</label>
+                            <input id="stre" type="text" placeholder="Ingresar calle"> 
+                        </div>
+
+                        <div class="element">
+                            <label for="num">Número</label>
+                            <input id="nume" type="text" placeholder="Ingresar Numero"> 
+                        </div>
+
+                        <div class="element">
+                            <label for="cp">Código Postal</label>
+                            <input id="code" type="text" placeholder="Ingresar Código Postal"> 
+                       </div>
+                    </div>
+                </div>
+
+                <!--Datos Academicos-->
+                <div class="Aca">
+                    <label class="sub" for="date">Datos Académicos</label>
+                    <div class="da">
+                        <!--Carrera-->
+                        <div class="element">
+                            <label for="carrer">Licenciatura</label>
+                            <select id="carr">                             
+                            </select>
+                        </div>
+                        <!--cuenta-->
+                        <div class="element">
+                            <label for="account">Numero de Cuenta</label>
+                            <input id="unam" type="text" placeholder="Ingresa numero de cuenta">
+                        </div>
+                        <!--Contraseña-->
+                        <div class="element">
+                            <label for ="password">Contraseña</label>
+                            <input id="pss1" type="password" placeholder="Ingresa contraseña">
+                        </div>
+                        <!--Contraseña-->
+                        <div class="element">
+                            <label for ="password">Confirmar Contraseña</label>
+                            <input id="pss2" onkeyup="EqualPass();" type="password" placeholder="Ingresa contraseña">
+                            <label id="veripass"></label>
+                        </div>
+                    </div>                
+                </div>                            
+            </form> 
+            <button id="regi" class="botoncarga" onclick="elementos()">Registrar</button>
+        </div>
+    </main>
+    <script>selects();</script>
+
+    <footer>
+        <img class="logo-foot" src="imagenes/logo_1.png" alt="icono" width="220px" height="119px">
+        <ul class="lista-social">
+            <li> <a  href="https://www.facebook.com/"><img src="imagenes/Social/32x32/fbblanco32.png" alt=""></a></li>
+            <li> <a  href="https://www.instagram.com/"><img src="imagenes/Social/32x32/instagramblanco32.png" alt=""></a></li>
+            <li> <a  href="https://www.twitter.com/"><img src="imagenes/Social/32x32/twitterblanco32.png" alt=""></a></li>
+            <li> <a  href="https://www.youtube.com/"><img src="imagenes/Social/32x32/youtubeblanco32.png" alt=""></a></li>
+    
+        </ul>
+        <ul class="list-foot">
+            <li>
+            <h1><a href="">Avisos de Privacidad</a></h1>
+            </li>
+            <li><h1><a href=""><br>Contacto</a></h1></li>
+            <p class="direccion"><br><br>© 2020 AcaBanco, Banco Estudiantil de la Facultad de Estudios Superiores Acatlán, Avenida Alcanfores y San Juan, Totoltepec s/n, Sta Cruz Acatlan, 53150 Naucalpan de Juárez, Méx.</p>
+        </ul>
+    </footer>
+
+</body>
