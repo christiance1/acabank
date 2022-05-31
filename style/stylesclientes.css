@@ -1,0 +1,330 @@
+#titulo{
+    font-size: 60px;
+    padding-left: 225px;
+    text-align: start;
+    height: 80px;
+    margin-top: -.8px;
+    padding-top: 12px;
+    color: #1b3d70;
+    font:bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    -webkit-text-stroke: 1px #BB8800;
+    text-shadow: #BB8800 3px 3px 3px; /*sombra para el texto*/
+}
+
+
+header{
+    display: inline-flex;
+    /*justify-content: space-around;*/
+    padding-bottom: 4px;
+}
+
+/*Todos los estilos referentes a Nav*/
+nav{
+    background: rgb(211, 157, 8);
+    height: 45px;
+    width: 100%;
+    margin-top: -30px; /*sube el contenido del nav*/
+    z-index: 3;
+}
+
+.nav-ul{
+    float: left;
+    margin-right: 25px;
+}
+
+.nav-li{
+    display: inline-block; /*Para poner el menú en forma de lineal y no como lista*/
+    line-height: 30px;
+    margin: 0 5px;
+    margin-top: 6px;
+    padding: 3px 5px;    
+}
+.nav-a{
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize; /*Escribe en automatico la primera letra en Mayusculas*/
+    border-radius: 3px;
+    padding: 7px 13px;
+    text-decoration: none; /*Para quitar los hipervinculos*/ 
+}
+.nav-li:hover{
+
+     background: #F9EB75;
+     transition: all .3s; /*duración de la transición*/ 
+     z-index: 3;    
+}
+
+.nav-buscador{
+    font-size: 15px; /*Tamaño de letra*/
+    float: right;
+    margin-right: 10px; /*marguen a la derecha*/
+    margin-top: 9px; /*marguen arriba*/
+    line-height: 25px; /*tamaño*/
+    width: 290px;
+    padding: 0px 8px;
+    border-radius: 50px;
+    border: none; /*Para no tener el cuenta el border marcado en general*/
+    border-bottom:3px solid #1b3d70;;
+    background: #1b3d70; /*inset es interior*/
+    color: white;
+}
+
+.nav-buscador:focus{  /*sirve para cambiar el text del buscador*/
+    background: rgb(19, 18, 85);
+}
+
+.nav-boton{
+    float: right;
+    height: 30px;
+    margin-top: 9px;
+    width: 30px;
+    margin-right: 25px;
+    border-radius: 20px;
+    border:none;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge, cambiamos el color de placeholder */ 
+    color: #E6E8E9;
+}
+
+/*propiedades del submenu*/
+nav ul ul{
+    position: absolute;
+    top: 150px;
+    display: block;
+    background: rgb(173, 130, 9);
+    opacity: 0;
+    transition: all .6s;/*tiempo de la transición en las translación*/
+    list-style: none; /*para quitar las bolitas negras de las listas*/
+    z-index: 3;
+}
+
+nav ul ul li{
+    margin-right: 18px;
+    margin-left: 18px;
+}
+
+nav ul li:hover ul{
+    opacity: 1;
+}
+
+.a-submenu{
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize; /*Escribe en automatico la primera letra en Mayusculas*/
+    text-decoration: none; /*Para quitar los hipervinculos*/
+}
+
+section{
+    background:#1b3d70;;
+    position: absolute;
+    clear: both; /*rompemos el float anterior*/
+    float: left;
+    width: 70%;
+    height: 420px;
+    margin-top: 1px;
+}
+
+/*Propiedades de aside*/
+aside{
+    display: block;
+    margin: 1px 1px;
+    float: right;
+    width: 28.8%;
+    height: 420px;
+    background-color: #1b3d70;;
+    border-radius: 15px;
+    overflow: auto;  /*lo ponemos en auto para que pueda controlarse con el scrollbar*/
+}
+
+/*DE AQUI*/
+
+aside .cuenta{
+    margin: 1%;
+    color:white;
+    padding-top: 5%;
+    border: solid rgb(211, 157, 8);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 4%;
+    padding-left: 5%;
+}
+
+aside .cuenta .saldo{
+    align-self: center;
+}
+
+aside .opcion{
+    color: white;
+    height: 20%;
+    margin-bottom: 3%;
+    background-color:  rgb(211, 157, 8);
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+aside .titopcion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+} /*ACA*/
+
+.tbarra{
+    padding-top: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font:bold;
+    background: #1b3d70;
+
+}
+
+/*Es para colocar el scrollbar al aside*/
+aside::-webkit-scrollbar{
+    width: 12px;
+ }
+
+aside::-webkit-scrollbar-thumb{
+    background: #CFD2D4;
+}
+
+aside article{
+    padding-top: 5px;
+    padding-left: 5px;
+    background: #7EC3FC;
+    margin: 9px 10px;
+    border-radius: 10px;
+    opacity: .9;
+    padding-bottom: 1;
+}
+
+.nav-figure{
+    background: white;
+    margin: 0px 12px;
+    margin-top: -12px;
+    margin-bottom: 5px;
+}
+
+.nav-imagen{
+    width: 100%;
+    height: 110px;
+}
+
+/*todas las propiedades del main*/
+main{
+    clear: both;
+    width: 100%;
+    height: 350px;
+    background-color: #1b3d70;
+    margin-top: 430px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-figure{
+    margin: 0px 0px;
+    margin-bottom: 5px;
+}
+
+.main-imagen{
+    width: 100%;
+    height: 130px;
+}
+
+.cajas{
+    margin: 20px 10px;
+    display: inline-block;
+    text-align: center;
+    background: white;
+    width: 31%;
+    height: 250px;
+}
+
+footer{
+    width: 100%;
+    height: 140px;
+    background-color: #BB8800;
+    margin: 10px 0px;
+}
+
+.logo-foot{
+    width: 220px;
+    height: 119px;
+    padding-top: 5px;
+    padding-left: 10px;
+    float: left; 
+}
+
+.list-foot{
+    float: left;
+    padding-left: 210px;
+    margin-top: -121px;
+    text-align: center;
+}
+
+.list-foot li{
+    padding-right: 55px;
+    display: inline-block;
+    padding-top: 50px;
+    justify-content: center;
+}
+.list-foot a{ 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    text-decoration: none;
+    color: white;
+}
+.list-foot a:hover{
+   text-decoration: underline;
+}
+
+.lista-social{
+    list-style: none;
+    height: 20px;
+    padding-left: 415px;
+}
+.lista-social li{
+    display: inline-block;
+    padding-left: 100px;
+    padding-top: 25px;
+}
+
+.direccion{
+    clear: both;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-decoration: none;
+    color: white;
+    margin-top: -35px;
+}
+
+figcaption{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:small;
+    padding-left: 5px;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    padding-left: 13px;
+    padding-bottom: 0px;
+}
+
+p .notice{
+    height: 5px;
+}
+
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

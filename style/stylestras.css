@@ -1,0 +1,266 @@
+#titulo{
+    font-size: 60px;
+    padding-left: 225px;
+    text-align: start;
+    height: 80px;
+    margin-top: -.8px;
+    padding-top: 12px;
+    color: #6D4203;
+    font:bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    -webkit-text-stroke: 1px #c1dc54;
+    text-shadow: #c1dc54 3px 3px 3px; /*sombra para el texto*/
+}
+
+
+header{
+    display: inline-flex;
+    /*justify-content: space-around;*/
+    padding-bottom: 0px;
+}
+
+/*todas las propiedades del main*/
+main{
+    clear: both;
+    width: 100%;
+    height: 80%;
+    background-color:#6D4203;
+    display: flex;
+    padding-top: 0px;
+    justify-content: center;
+    margin-top: -24px;
+
+}
+
+.main-figure{
+    margin: 0px 0px;
+    margin-bottom: 5px;
+}
+
+.main-imagen{
+    width: 100%;
+    height: 130px;
+}
+
+
+.back{
+    margin-left: 1%;
+    margin-bottom: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    text-decoration: none;
+    color: #C24702;
+}
+
+.back:hover{
+    text-decoration: underline;
+}
+
+.foto1{
+    height: 91%;
+    width: 19%;
+    border-radius: 25px;
+    
+}
+.img1{
+    width: 100%;
+    height: 100%;
+    margin-top: 6%;
+    border-radius: 25px;
+    
+}
+
+.foto2{
+    height: 91%;
+    width: 19%;
+    border-radius: 25px;
+    
+}
+.img2{
+    width: 100%;
+    height: 100%;
+    margin-top: 6%;
+    border-radius: 25px;
+}
+
+.cajas{
+    margin: 20px 10px;
+    display: inline-block;
+    text-align: center;
+    background: white;
+    width: 31%;
+    height: 250px;
+}
+
+footer{
+    clear: both;
+    width: 100%;
+    height: 140px;
+    background-color:  #C24702;
+    margin: 10px 0px;
+}
+
+.logo-foot{
+    width: 220px;
+    height: 119px;
+    padding-top: 10px;
+    padding-left: 10px;
+    float: left; 
+}
+
+.list-foot{
+    float: left;
+    padding-left: 210px;
+    margin-top: -136px;
+    text-align: center;
+}
+
+.list-foot li{
+    padding-right: 55px;
+    display: inline-block;
+    padding-top: 40px;
+    justify-content: center;
+}
+.list-foot a{ 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    text-decoration: none;
+    color: white;
+}
+.list-foot a:hover{
+   text-decoration: underline;
+}
+
+.lista-social{
+    list-style: none;
+    height: 20px;
+    padding-left: 415px;
+}
+.lista-social li{
+    display: inline-block;
+    padding-left: 100px;
+    padding-top: 25px;
+}
+
+.direccion{
+    clear: both;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-decoration: none;
+    color: white;
+    margin-top: -35px;
+}
+
+figcaption{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:small;
+    padding-left: 5px;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    padding-left: 13px;
+    padding-bottom: 0px;
+}
+
+p .notice{
+    height: 5px;
+}
+
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.datos
+{
+    margin-top: 1%;
+    border-radius: 20px;
+    background-color: white;
+    width: 40%;
+    height: 80%;
+    border:solid;
+    color:  #C24702;
+    padding: 35px 35px;
+}
+
+
+.datos h1
+{
+    font-family: Arial;
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.datos label
+{
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.datos input
+{
+    width: 100%;
+    margin-bottom: 10px; 
+    
+}
+
+.datos input[type="text"],
+.datos input[type="password"]
+{
+    
+    border: none;
+    border-bottom: 1px solid #C24702;
+    background: transparent;
+    height: 40px;
+    color:  #C24702;
+    font-size: 16px;
+}
+
+.datos input[type="submit"]
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #c1dc54 ;
+    color: #4F3503;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.datos input[type="submit"]:hover
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #D5BF93;
+    transition: all .3s
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+
+.log a:hover
+{
+    color: #D5BF93;
+    text-decoration: underline;
+}
+
+
+.foto img{
+    background: red;
+    width: 900px;
+    height: 520px;
+}

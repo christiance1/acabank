@@ -1,0 +1,329 @@
+#titulo{
+    font-size: 60px;
+    padding-left: 225px;
+    text-align: start;
+    height: 80px;
+    margin-top: -.8px;
+    padding-top: 12px;
+    color: #1b3d70;
+    font:bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    -webkit-text-stroke: 1px #BB8800;
+    text-shadow: #BB8800 3px 3px 3px; /*sombra para el texto*/
+}
+
+header{
+    display: inline-flex;
+    /*justify-content: space-around;*/
+    padding-bottom: 4px;
+}
+
+
+/*todas las propiedades del main*/
+main{
+    clear: both;
+    width: 90%;
+    height: 235%;
+    background-color: #1b3d70; /*3*/
+    margin-top: -30px;
+    display: flex;
+    padding: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+
+
+}
+
+.main-figure{
+    margin: 0px 0px;
+    margin-bottom: 5px;
+}
+
+.main-imagen{
+    width: 100%;
+    height: 130px;
+}
+
+.cajas{
+    margin: 20px 10px;
+    display: inline-block;
+    text-align: center;
+    background: white;
+    width: 31%;
+    height: 250px;
+}
+
+footer{
+    width: 100%;
+    height: 140px;
+    background-color: #BB8800; /*4*/
+    margin: 10px 0px;
+}
+
+.logo-foot{
+    width: 220px;
+    height: 119px;
+    padding-top: 5px;
+    padding-left: 10px;
+    float: left; 
+}
+
+.list-foot{
+    float: left;
+    padding-left: 210px;
+    margin-top: -140px;
+    text-align: center;
+}
+
+.list-foot li{
+    padding-right: 55px;
+    display: inline-block;
+    padding-top: 50px;
+    justify-content: center;
+}
+.list-foot a{ 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    text-decoration: none;
+    color: white;
+}
+.list-foot a:hover{
+   text-decoration: underline;
+}
+
+.lista-social{
+    list-style: none;
+    height: 20px;
+    padding-left: 415px;
+}
+.lista-social li{
+    display: inline-block;
+    padding-left: 100px;
+    padding-top: 25px;
+}
+
+.direccion{
+    clear: both;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-decoration: none;
+    color: white;
+    margin-top: -35px;
+}
+
+
+figcaption{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:small;
+    padding-left: 5px;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    padding-left: 13px;
+    padding-bottom: 0px;
+}
+
+p .notice{
+    height: 5px;
+}
+
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.reg
+{
+    margin-top: 25px;
+    border-radius: 20px;
+    background-color: white;
+    width: 100%;
+    height: 91%;
+    border:solid;
+    color:   #1b3d70; /*5*/
+    margin-right: 30px;
+    padding: 35px 35px;
+    padding-left: 20%;
+}
+
+
+
+.reg .sub{
+    width: 80%;
+    margin-bottom: 7px;
+    font-size: x-large; 
+    display: flex;
+    justify-content: center;
+    
+}
+.reg .dp .sub2{
+    width: 80%;
+    margin-bottom: 7px;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.reg h1
+{
+    align-self: center;
+    font-family: Arial;
+    margin: 0;
+    padding: 0 0 20px;
+    font-size: 40px;
+}
+
+.reg label 
+{
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    width: 40%;
+}
+
+.reg .dp
+{
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    width:100%;
+}
+
+.reg .Aca
+{
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    width:100%;
+}
+
+
+
+.reg input[type="text"],
+.reg input[type="date"],
+.reg input[type="password"]
+{
+    
+    border: none;
+    border-bottom: 1px solid   #1b3d70; /*6*/
+    background: transparent;
+    height: 40px;
+    width: 70%;
+    color:   #1b3d70; /*7*/
+    font-size: 16px;
+}
+
+.botoncarga
+{
+    
+    margin-top: 20px;
+    margin-left: 23%;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 30%;
+    align-self: center;
+    background: #1b3d70;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.botoncarga:hover
+{
+    
+    margin-top: 20px;
+    margin-left: 23%;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 30%;
+    align-self: center;
+    background: #0000ff59;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.reg a
+{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color:  #0082e6;
+}
+
+.reg a:hover
+{
+    color: #0082e6;
+    text-decoration: underline;
+}
+
+.reg .dp{
+    margin-top: 16px;
+    width: 100%;
+    height: 50%;
+    display: block;
+    
+
+}
+
+.reg .Aca .da,
+.reg .dp .divint{
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    flex-flow: wrap row;
+    margin-bottom: 30px;
+    
+}
+
+.reg .Aca .da .element,
+.reg .dp .divint .element{
+    width: 49%;
+    margin-right: 1%;
+    display: block;
+}
+
+select {
+     background: transparent;
+     font-size: 14px;
+     height: 30px;
+     padding: 5px;
+     width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border: thin solid; /*9*/
+    font-size: 17px;
+    line-height: 20px;
+    color:   #1b3d70; /*8*/
+  }
+
+.sidebar-box select{
+display:block;
+padding: 5px 10px;
+height:42px;
+margin:10px auto;
+min-width: 225px;
+height: 34px;
+background-image: url("../imagenes/combo.png"),
+    linear-gradient(to bottom, #ffffff 0%,#f7f7f7 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;} 
